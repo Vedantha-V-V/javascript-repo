@@ -30,3 +30,31 @@ buttons.forEach(function(button){
 })
 
 ```
+
+## Project 2 (BMI Calculator)
+
+```javascript
+
+const form = document.querySelector('form')
+//This use case will use empty value
+//const height = int(document.querySelector('#height').value)
+
+form.addEventListener('submit',function(e){
+    e.preventDefault()
+    const height = parseInt(document.querySelector('#height').value)
+    const weight = parseInt(document.querySelector('#weight').value)
+    const result = document.querySelector("#result")
+    if(height === '' || height < 0 || isNaN(height)){
+        result.innerHTML = "Please enter a valid value"
+    }
+    else if(weight === '' || weight < 0 || isNaN(weight)){
+        console.log("Invalid input")
+    }
+    else{
+        const val = Math.round(weight*(Math.pow(height,2)))
+        console.log(val)
+        result.innerHTML = `<spam>The BMI is ${val}</span>`
+    }
+})
+
+```
