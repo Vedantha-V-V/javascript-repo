@@ -7,12 +7,12 @@
 </head>
 <body style="background-color: #414141; color:aliceblue">
     <h2>Amazing Images</h2>
-    <ul>
+    <ul id="images">
         <li><img width="200px" id="audi" src="Audi Quattro.png" alt=""></li>
         <li><img width="200px" id="formula" src="Formula One Car 1970.png"></li>
         <li><img width="200px" id="lamborghini" src="Lamborghini Countach.png"></li>
         <li><img width="200px" id="volkswagen" src="Volkswagen Van with Offroad Tyres.png"></li>
-        <li><a style="color:aliceblue" href="https://google.com">Google</a></li>
+        <li><a id="google"  target="_blank" style="color:aliceblue" href="https://google.com">Google</a></li>
     </ul>
 </body>
 <script>
@@ -22,10 +22,33 @@
 
     //attachEvent()
     //jQuery() previous React - on
-    document.getElementById('lamborghini').addEventListener('click',function(){
-        window.alert("Gold Lamborghini Countach")
-    })
+    // type, timestamp, defaultPevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
 
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul")
+    // },false)
+
+    // document.getElementById('lamborghini').addEventListener('click',function(e){
+    //     console.log("Lamborghini Countach")
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault()
+    //     console.log("Google was clicked")
+    // })
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        let removeIt = e.target.parentNode
+        if(e.target.tagName === 'IMG'){
+            removeIt.remove()
+        }
+    },false)
+
+    //removeIt.parentNode.removeChild(removeIt)
 
 </script>
 </html>
