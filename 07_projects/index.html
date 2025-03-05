@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Color Scheme Switcher</h1>
-    <span class="button" id="grey">Grey</span>
-    <span class="button" id="white">White</span>
-    <span class="button" id="blue">Blue</span>
-    <span class="button" id="yellow">Yellow</span>
-    <form>
-        <input type="text" id="weight" placeholder="Enter the Weight">
-        <input type="text" id="height" placeholder="Enter the Height">
-        <button>Submit</button>
-        <div id="result"></div>
-        <div id="weight-guide">
-            <h3>Weight Guide</h3>
-            <p>Underweight</p>
-            <p>Normal</p>
-            <p>Underwieght</p>
+    <div class="navbar">
+        <button>Color Scheme Changer</button>
+    </div>
+    <section class="section" id="project1">
+        <h1>Color Scheme Switcher</h1>
+        <span class="button" id="grey">Grey</span>
+        <span class="button" id="white">White</span>
+        <span class="button" id="blue">Blue</span>
+        <span class="button" id="yellow">Yellow</span>
+    </section>
+    <section class="section" id="project2">
+        <form>
+            <input type="text" id="weight" placeholder="Enter the Weight">
+            <input type="text" id="height" placeholder="Enter the Height">
+            <button>Submit</button>
+            <div id="result"></div>
+            <div id="weight-guide">
+                <h3>Weight Guide</h3>
+                <p>Underweight</p>
+                <p>Normal</p>
+                <p>Underwieght</p>
+            </div>
+        </form>
+    </section>
+    <section class="section" id="project3">
+        <div class="center">
+            <div id="banner">
+                <span>Your Local Time</span>
+                <div id="clock"></div>
+            </div>
         </div>
-    </form>
-    <script src="one.js"></script>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

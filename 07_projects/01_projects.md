@@ -33,7 +33,7 @@ buttons.forEach(function(button){
 
 ## Project 2 (BMI Calculator)
 
-```javascript
+```Javascript
 
 const form = document.querySelector('form')
 //This use case will use empty value
@@ -56,5 +56,19 @@ form.addEventListener('submit',function(e){
         result.innerHTML = `<spam>The BMI is ${val}</span>`
     }
 })
+
+```
+
+## Project 3 (Digital Clock)
+
+```Javascript
+
+const clock = document.getElementById('clock')
+//document.querySelector('#clock')
+
+setInterval(function(){
+    let date = new Date();
+    clock.innerHTML=`<span>${date.toLocaleTimeString()}</span>`
+},1000)
 
 ```

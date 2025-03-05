@@ -44,3 +44,12 @@ form.addEventListener('submit',function(e){
         result.innerHTML = `<spam>The BMI is ${val}</span>`
     }
 })
+
+//Digital Clock
+const clock = document.getElementById('clock')
+//document.querySelector('#clock')
+
+setInterval(function(){
+    let date = new Date();
+    clock.innerHTML=`<span>${date.toLocaleTimeString()}</span>`
+},1000)
