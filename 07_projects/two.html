@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Number Guesser</h1>
+        <p>Random Number between 1 and 100</p>
+        <p>You have 10 guesses</p>
+        <form class="form">
+            <label for="guessField" id="guess">Guess The Number</label>
+            <input type="number" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit Guess">
+        </form>
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Left: <span class="chances"></span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="two.js"></script>
+</body>
+</html>
