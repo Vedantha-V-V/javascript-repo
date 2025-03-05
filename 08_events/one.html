@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color:aliceblue">
+    <h2>Amazing Images</h2>
+    <ul>
+        <li><img width="200px" id="audi" src="Audi Quattro.png" alt=""></li>
+        <li><img width="200px" id="formula" src="Formula One Car 1970.png"></li>
+        <li><img width="200px" id="lamborghini" src="Lamborghini Countach.png"></li>
+        <li><img width="200px" id="volkswagen" src="Volkswagen Van with Offroad Tyres.png"></li>
+        <li><a style="color:aliceblue" href="https://google.com">Google</a></li>
+    </ul>
+</body>
+<script>
+    // document.getElementById('lamborghini').onclick = function(){
+    //     window.alert('Lamborghini Countach')
+    // }
+
+    //attachEvent()
+    //jQuery() previous React - on
+    document.getElementById('lamborghini').addEventListener('click',function(){
+        window.alert("Gold Lamborghini Countach")
+    })
+
+
+</script>
+</html>
