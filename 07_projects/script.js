@@ -39,7 +39,7 @@ form.addEventListener('submit',function(e){
         console.log("Invalid input")
     }
     else{
-        const val = Math.round(weight*(Math.pow(height,2)))
+        const val = Math.round(weight/(Math.pow(height,2)))
         console.log(val)
         result.innerHTML = `<spam>The BMI is ${val}</span>`
     }
