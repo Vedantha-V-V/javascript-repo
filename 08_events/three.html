@@ -11,16 +11,20 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+    let intervalId
     const sayDate = function(e){
         console.log(e,Date.now())
     }
 
     function startName(){
-        intervalId = setInterval(sayDate,1000,"Hi")
+        if(!intervalId){
+            intervalId = setInterval(sayDate,1000,"Hi")
+        }
     }
 
     function stopName(){
         clearInterval(intervalId)
+        intervalId=null
         console.log("Stopped")
     }
 
